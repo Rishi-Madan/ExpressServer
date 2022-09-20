@@ -1,9 +1,10 @@
-const express = require('express')
-const index = express()
+import { Express } from "express"
+import express = require("express");
+const index = express();
 const port = 8080
 
 index.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send("Hello World!")
 })
 
 index.listen(port, () => {
